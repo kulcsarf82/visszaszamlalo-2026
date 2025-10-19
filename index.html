@@ -20,6 +20,7 @@
     .count {
       font-size:3rem; letter-spacing:0.2em;
       display:flex; justify-content:center;
+      flex-wrap: wrap;
     }
     .digit {
       background:#111; border:2px solid #333;
@@ -29,6 +30,19 @@
     }
     .labels {
       margin-top:0.5rem; color:#888; font-size:0.9rem;
+    }
+    /* Mobil nézetre kisebb számláló */
+    @media (max-width: 500px) {
+      .count {
+        font-size: 1.7rem;
+      }
+      .digit {
+        margin: 0 2px;
+        padding: 0.2em 0.15em;
+      }
+      .title {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
